@@ -26,7 +26,7 @@ public class App
 
         Dean dean = new Dean(32, 1020, "II");
 
-        if (true) {
+        if ( true ) {
             teach1.setStudents( new Student[] {stud0,stud1,stud2,stud3,stud4});
             teach1.setStudents( new Student[] {stud5,stud6,stud7,stud8,stud9});
         }
