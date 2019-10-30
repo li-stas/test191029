@@ -5,12 +5,14 @@ import java.util.Arrays;
 public class Teacher extends Person implements Scientist {
     private int salary = 0;
     private Student[] students = new Student[5];
-    public Teacher(int age, int deposit) {
-        super(age, deposit);
+
+
+    public Teacher(int salary) {
+        this.salary = salary;
     }
 
-    public Teacher(int age, int deposit, int salary) {
-        super(age, deposit);
+    public Teacher(String nameFist, int age, int deposit, int salary) {
+        super(nameFist, age, deposit);
         this.salary = salary;
     }
 
@@ -35,7 +37,7 @@ public class Teacher extends Person implements Scientist {
         return "Teacher{" +
                 "salary=" + salary +
                 ", students=" + Arrays.toString(students) +
-                '}';
+                "} " + super.toString();
     }
 
     @Override

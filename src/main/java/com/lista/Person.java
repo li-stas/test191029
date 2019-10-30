@@ -1,13 +1,25 @@
 package com.lista;
 
 public class Person {
+    private String nameFist = "";
     private int age = 0;
-    //private String gender ="";
     private int deposit = 0;
 
-    public Person(int age, int deposit) {
+    public Person() {
+    }
+
+    public Person(String nameFist, int age, int deposit) {
+        this.nameFist = nameFist;
         this.age = age;
         this.deposit = deposit;
+    }
+
+    public String getNameFist() {
+        return nameFist;
+    }
+
+    public void setNameFist(String nameFist) {
+        this.nameFist = nameFist;
     }
 
     public int getAge() {
@@ -30,4 +42,12 @@ public class Person {
         deposit += nAddSum;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "nameFist='" + nameFist + '\'' +
+                ", age=" + age +
+                ", deposit=" + deposit +
+                '}';
+    }
 }

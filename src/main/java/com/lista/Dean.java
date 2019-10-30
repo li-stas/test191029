@@ -2,24 +2,16 @@ package com.lista;
 
 import java.util.Arrays;
 
-public class Dean extends Person implements Scientist {
+public class Dean extends Person  {
     private String academicDegree = "";
     private Teacher[] teachers = new Teacher[2];
 
-    public Dean(int age, int deposit) {
-        super(age, deposit);
-    }
-
-    public Dean(int age, int deposit, String academicDegree) {
-        super(age, deposit);
+    public Dean(String academicDegree) {
         this.academicDegree = academicDegree;
     }
 
-    public String getAcademicDegree() {
-        return academicDegree;
-    }
-
-    public void setAcademicDegree(String academicDegree) {
+    public Dean(String nameFist, int age, int deposit, String academicDegree) {
+        super(nameFist, age, deposit);
         this.academicDegree = academicDegree;
     }
 
@@ -36,17 +28,6 @@ public class Dean extends Person implements Scientist {
         return "Dean{" +
                 "academicDegree='" + academicDegree + '\'' +
                 ", teachers=" + Arrays.toString(teachers) +
-                '}';
-    }
-
-
-    @Override
-    public void learn() throws ExceptionMy {
-
-    }
-
-    @Override
-    public void learns() throws ExceptionMy {
-
+                "} " + super.toString();
     }
 }
