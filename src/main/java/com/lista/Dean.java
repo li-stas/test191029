@@ -21,6 +21,9 @@ public class Dean extends Person  {
 
     public void setTeachers(Teacher[] teachers) {
         this.teachers = teachers;
+        for (int i = 0; i < teachers.length; i++) {
+            teachers[i].setDependence(this);
+        }
     }
 
     @Override
@@ -28,6 +31,11 @@ public class Dean extends Person  {
         return "Dean{" +
                 "academicDegree='" + academicDegree + '\'' +
                 ", teachers=" + Arrays.toString(teachers) +
+                "} " + super.toString();
+    }
+
+    public String showForTeachersDependence() {
+        return "Dean{" +
                 "} " + super.toString();
     }
 }

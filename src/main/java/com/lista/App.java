@@ -58,7 +58,9 @@ public class App
                 ,zsmk49.getStudents()[9]
         });
 
-        System.out.println(zsmk49.getTeachers()[1]);
+        System.out.println(stud0);
+        System.out.println(teach1);
+        System.out.println(dean);
         //System.out.println(teach2);
     }
 }

@@ -2,6 +2,7 @@ package com.lista;
 
 public class Student extends Person implements Scientist{
     private int avgRating = 0;
+    private Teacher dependence;
 
     public Student(int avgRating) {
         this.avgRating = avgRating;
@@ -9,6 +10,14 @@ public class Student extends Person implements Scientist{
 
     public Student(String nameFist, int age, int deposit) {
         super(nameFist, age, deposit);
+    }
+
+    public Teacher getDependence() {
+        return dependence;
+    }
+
+    public void setDependence(Teacher dependence) {
+        this.dependence = dependence;
     }
 
     public int getAvgRating() {
@@ -28,6 +37,7 @@ public class Student extends Person implements Scientist{
     public String toString() {
         return "Student{" +
                 "avgRating=" + avgRating +
+                ", dependence=" + dependence() +
                 "} " + super.toString();
     }
 
@@ -36,6 +46,10 @@ public class Student extends Person implements Scientist{
             return avgRating;
         }
         throw new ExceptionMy("!avgRating > 0");
+    }
+
+    private String dependence() {
+        return dependence.showForStudentDependence();
     }
 
     @Override

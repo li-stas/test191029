@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Teacher extends Person implements Scientist {
     private int salary = 0;
     private Student[] students = new Student[5];
+    private Dean dependence;
 
 
     public Teacher(int salary) {
@@ -14,6 +15,14 @@ public class Teacher extends Person implements Scientist {
     public Teacher(String nameFist, int age, int deposit, int salary) {
         super(nameFist, age, deposit);
         this.salary = salary;
+    }
+
+    public Dean getDependence() {
+        return dependence;
+    }
+
+    public void setDependence(Dean dependence) {
+        this.dependence = dependence;
     }
 
     public int getSalary() {
@@ -30,6 +39,10 @@ public class Teacher extends Person implements Scientist {
 
     public void setStudents(Student[] students) {
         this.students = students;
+        for (int i = 0; i < students.length; i++) {
+            students[i].setDependence(this);
+        }
+
     }
 
     @Override
@@ -37,9 +50,19 @@ public class Teacher extends Person implements Scientist {
         return "Teacher{" +
                 "salary=" + salary +
                 ", students=" + Arrays.toString(students) +
+                ", dependence=" + dependence() +
                 "} " + super.toString();
     }
 
+    private String dependence() {
+        return dependence.showForTeachersDependence();
+    }
+
+
+    public String showForStudentDependence() {
+        return "Teacher{" +
+                "} " + super.toString();
+    }
     @Override
     public void learn() throws ExceptionMy {
 
