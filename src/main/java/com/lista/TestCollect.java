@@ -5,7 +5,7 @@ import java.util.*;
 public class TestCollect {
     public static void main( String[] args ) {
         long[][] aStatistics = {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
-        int nCntAdd = 10000;
+        int nCntAdd = 100000;
         long startTime;
         boolean lExit = false;
         Student getStudent;
@@ -129,20 +129,20 @@ public class TestCollect {
                     //System.out.println("size="+dbHashMap.size());break;
                 case 6: //System.out.println("6. Statistics                    ");
                     System.out.println("╔═══════════════════════════════════════════╗");
-                    System.out.println("║    Таест на " + nCntAdd + "               ║");
-                    System.out.println("═════════════════════════════════════════════")
+                    System.out.println("║    Тест на " + nCntAdd + "                         ║");
+                    System.out.println("═════════════════════════════════════════════");
                     System.out.println("║             ║   ADD   ║   GET   ║ REMOVE  ║");
-                    System.out.println("═════════════════════════════════════════════")
-                    System.out.println("║1. ArrayList ║  99999  ║  99999  ║ 99999   ║");
-                    System.out.println("═════════════════════════════════════════════")
-                    System.out.println("║2. LinkedList║  99999  ║  99999  ║ 99999   ║");
                     System.out.println("═════════════════════════════════════════════");
-                    System.out.println("║3. HashSet   ║  99999  ║  99999  ║ 99999   ║");
+                    System.out.printf("║1. ArrayList ║  %5d  ║  %5d  ║ %5d   ║%n",aStatistics[0][0],aStatistics[0][1],aStatistics[0][2]);
                     System.out.println("═════════════════════════════════════════════");
-                    System.out.println("║4. HashMap   ║  99999  ║  99999  ║ 99999   ║");
-                    System.out.println("═════════════════════════════════════════════")
-                    System.out.println("║5. TreeMap   ║  99999  ║  99999  ║ 99999   ║");
-                    System.out.println("═════════════════════════════════════════════")
+                    System.out.printf("║2. LinkedList║  %5d  ║  %5d  ║ %5d   ║%n",aStatistics[1][0],aStatistics[1][1],aStatistics[1][2]);
+                    System.out.println("═════════════════════════════════════════════");
+                    System.out.printf("║3. HashSet   ║  %5d  ║  %5d  ║ %5d   ║%n",aStatistics[2][0],aStatistics[2][1],aStatistics[2][2]);
+                    System.out.println("═════════════════════════════════════════════");
+                    System.out.printf("║4. HashMap   ║  %5d  ║  %5d  ║ %5d   ║%n",aStatistics[3][0],aStatistics[3][1],aStatistics[3][2]);
+                    System.out.println("═════════════════════════════════════════════");
+                    System.out.printf("║5. TreeMap   ║  %5d  ║  %5d  ║ %5d   ║%n",aStatistics[4][0],aStatistics[4][1],aStatistics[4][2]);
+                    System.out.println("═════════════════════════════════════════════");
                     break;
                 case 0: //System.out.println("0. Exit                          ");
                     lExit = true;
