@@ -50,6 +50,10 @@ public class App
                 ,zsmk49.getStudents()[3]
                 ,zsmk49.getStudents()[4]
         });
+
+        //zsmk49.getTeachers()[0].setStudents(zsmk49.getStudents());
+
+
         zsmk49.getTeachers()[1].setStudents(new Student[] {
                 zsmk49.getStudents()[5]
                 ,zsmk49.getStudents()[6]
