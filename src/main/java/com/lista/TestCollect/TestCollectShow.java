@@ -1,4 +1,4 @@
-package com.lista;
+package com.lista.TestCollect;
 
 import java.util.Arrays;
 

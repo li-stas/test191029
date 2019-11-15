@@ -1,4 +1,6 @@
-package com.lista;
+package com.lista.TestCollect;
+
+import com.lista.Student;
 
 import java.util.List;
 import java.util.Map;
