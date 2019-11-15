@@ -5,7 +5,13 @@ import java.util.*;
 public class TestCollect {
     public static void main( String[] args ) {
 
-        long[][] aStatistics = {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+        long[][] aStatistics = {
+                {0,0,0},
+                {0,0,0},
+                {0,0,0},
+                {0,0,0},
+                {0,0,0}
+        };
         int nCntAdd = 10000;
         Scanner scan = new Scanner(System.in);
 
