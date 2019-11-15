@@ -3,7 +3,6 @@ package com.lista.testcollect;
 import java.util.Arrays;
 
 public class TestCollectShow {
-
     static void all_aStatisticsShow( int nCntAdd, long[][] aStatistics) {
         System.out.println("╔═══════════════════════════════════════════╗");
         System.out.println("║    Тест на " + nCntAdd + "                          ║");

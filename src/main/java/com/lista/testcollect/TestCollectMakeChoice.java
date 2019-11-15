@@ -3,6 +3,7 @@ package com.lista.testcollect;
 import java.util.Scanner;
 
 public class TestCollectMakeChoice {
+
     static void menu() {
         System.out.println("1. ArrayList                     ");
         System.out.println("2. LinkedList                    ");

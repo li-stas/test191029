@@ -6,7 +6,6 @@ import java.util.*;
 
 public class TestCollect {
     public static void main(String[] args) {
-
         long[][] aStatistics = {
                 {0, 0, 0},
                 {0, 0, 0},

@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class TestCollectMake {
-
     static void mTestSet(Set<Student> dbHashSet, int nCntAdd, long[] aStatistic) {
         Student getStudent;
         long startTime = System.currentTimeMillis();
