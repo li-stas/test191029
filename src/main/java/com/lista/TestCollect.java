@@ -4,10 +4,12 @@ import java.util.*;
 
 public class TestCollect {
     public static void main( String[] args ) {
+
         long[][] aStatistics = {{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
         int nCntAdd = 10000;
-        boolean lExit = false;
         Scanner scan = new Scanner(System.in);
+
+        boolean lExit = false;
         while (!lExit) {
             TestCollectMakeChoice.menu();
             int nChoice = TestCollectMakeChoice.nChoice(scan);
