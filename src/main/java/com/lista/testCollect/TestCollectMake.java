@@ -1,4 +1,4 @@
-package com.lista.TestCollect;
+package com.lista.testCollect;
 
 import com.lista.Student;
 
