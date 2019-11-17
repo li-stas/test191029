@@ -6,18 +6,18 @@ import java.util.*;
 
 public class TestCollect {
     public static void main(String[] args) {
-        long[][] aStatistics = {
-                {0, 0, 0},
-                {0, 0, 0},
-                {0, 0, 0},
-                {0, 0, 0},
-                {0, 0, 0}
+        Object  aStatistics[][] = {
+                {0, 0, 0,"1. ArrayList"},
+                {0, 0, 0,"2. LinkedList"},
+                {0, 0, 0,"3. HashSet"},
+                {0, 0, 0,"4. HashMap"},
+                {0, 0, 0,"5. TreeMap"}
         };
         int nCntAdd = 10000;
         Scanner scan = new Scanner(System.in);
 
-        boolean lExit = false;
-        while (!lExit) {
+        Object lExit = false;
+        while (!(boolean)lExit) {
             TestCollectMakeChoice.menu();
             int nChoice = TestCollectMakeChoice.nChoice(scan);
             switch (nChoice) { 

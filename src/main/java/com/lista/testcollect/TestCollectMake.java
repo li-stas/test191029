@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class TestCollectMake {
-    static void mTestSet(Set<Student> dbHashSet, int nCntAdd, long[] aStatistic) {
+    static void mTestSet(Set<Student> dbHashSet, int nCntAdd, Object[] aStatistic) {
         Student getStudent;
         long startTime = System.currentTimeMillis();
         for (int i = 1; i <= nCntAdd; i++) {
@@ -27,7 +27,7 @@ public class TestCollectMake {
         aStatistic[2] = System.currentTimeMillis() - startTime;
     }
 
-     static void mTestMap(Map<String, Student> dbHashMap, int nCntAdd, long[] aStatistic) {
+     static void mTestMap(Map<String, Student> dbHashMap, int nCntAdd, Object[] aStatistic) {
         Student getStudent;
         long startTime = System.currentTimeMillis();
         for (int i = 1; i <= nCntAdd; i++) {
@@ -46,7 +46,7 @@ public class TestCollectMake {
         aStatistic[2] = System.currentTimeMillis() - startTime;
     }
 
-    static void mTestList(List<Student> dbArrayList, int nCntAdd, long[] aStatistic) {
+    static void mTestList(List<Student> dbArrayList, int nCntAdd, Object[] aStatistic) {
         Student getStudent;
         long startTime = System.currentTimeMillis();
         for (int i = 1; i <= nCntAdd; i++) {
