@@ -1,6 +1,8 @@
 package com.lista;
 
-public class Student extends Person implements Scientist{
+import java.io.Serializable;
+
+public class Student extends Person implements Scientist, Serializable {
     private int avgRating = 0;
     private Teacher dependence;
 
@@ -61,4 +63,5 @@ public class Student extends Person implements Scientist{
     public void learns() throws ExceptionMy { // учится
 
     }
+
 }

@@ -1,6 +1,8 @@
 package com.lista;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
     private String nameFist = "";
     private int age = 0;
     private int deposit = 0;
